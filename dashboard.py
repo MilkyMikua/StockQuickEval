@@ -11,7 +11,8 @@ from engines import (
 )
 
 # Hardcode your authorized API Key securely
-GEMINI_KEY = "AQ.Ab8RN6L6LnM56u_duN1xx5MTb_fLL_hoPlk13iyOqUGm4a_ojw"
+# https://aistudio.google.com/u/0/prompts/new_chat get your own API key
+GEMINI_KEY = "AQ.Ab8R......"
 
 st.set_page_config(layout="wide", page_title="Quant Dashboard")
 st.title("📊 Multi-Phase Quantitative Investment Engine")
