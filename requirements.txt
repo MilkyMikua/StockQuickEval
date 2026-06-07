@@ -2,6 +2,7 @@ yfinance
 streamlit
 pandas
 numpy
-pandas-ta
 plotly
 google-genai
+--extra-index-url https://pypi.org/simple
+git+https://github.com/twopirllc/pandas-ta.git@development
