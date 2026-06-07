@@ -10,9 +10,14 @@ from engines import (
     extract_sentiment_ensemble
 )
 
-# Hardcode your authorized API Key securely
-# https://aistudio.google.com/u/0/prompts/new_chat get your own API key
-GEMINI_KEY = "AQ.Ab8R......"
+import streamlit as st
+
+# Check if running locally or deployed on the Streamlit Cloud server
+if "GEMINI_KEY" in st.secrets:
+    GEMINI_KEY = st.secrets["GEMINI_KEY"]
+else:
+    # Local fallback for your offline testing files
+    GEMINI_KEY = "PASTE_YOUR_LOCAL_KEY_HERE_FOR_OFFLINE_TESTS_ONLY"
 
 st.set_page_config(layout="wide", page_title="Quant Dashboard")
 st.title("📊 Multi-Phase Quantitative Investment Engine")
