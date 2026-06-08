@@ -4,4 +4,4 @@ pandas
 numpy
 plotly
 google-genai
-https://github.com/twopirllc/pandas-ta/archive/refs/heads/development.zip
+pandas-ta==0.3.14b0
