@@ -4,4 +4,4 @@ pandas
 numpy
 plotly
 google-genai
-pandas-ta==0.3.14b0
+pandas-ta-classic
